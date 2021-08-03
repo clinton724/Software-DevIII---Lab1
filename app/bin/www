@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const { app, server } = require('../dist/app')
+const { app, server } = require('../src/app')
 const debug = require('debug')('software-iii-lab-project:server')
 
 /**
