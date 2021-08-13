@@ -1,8 +1,14 @@
 import express from 'express'
 const app = express()
-
-const http = require('http')
 const db = require('./db.js')
+const http = require('http')
 const server = http.createServer(app)
+const accountRouters = require('./routes/accountManager')
+const bodyParser = require('body-parser')
+
+app.use(bodyParser.json())
+app.use(require('body-parser').urlencoded({ extended: true }))
+
+app.use('/', accountRouters)
 
 module.exports = { server, app }
