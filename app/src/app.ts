@@ -5,7 +5,9 @@ const http = require('http')
 const server = http.createServer(app)
 const accountRouters = require('./routes/accountManager')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 
+app.use(cors())
 app.use(bodyParser.json())
 app.use(require('body-parser').urlencoded({ extended: true }))
 

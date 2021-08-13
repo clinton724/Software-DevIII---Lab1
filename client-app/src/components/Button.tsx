@@ -4,7 +4,7 @@ import axios from 'axios'
 function Button () {
   const [data, setData] = useState([])
   useEffect(() => {
-    axios.get('http://localhost:3000/signup')
+    axios.get('http://localhost:3000/api/signup')
       .then(Response => {
         console.log(Response.data)
         setData(Response.data)

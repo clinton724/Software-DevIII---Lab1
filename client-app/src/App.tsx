@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
 import Signup from './components/Signup'
-import Button from './components/Button'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import './App.css'

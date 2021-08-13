@@ -14,6 +14,9 @@ function Navbar () {
         <Link to='/signup' style={navStyle}>
           <li>signup</li>
         </Link>
+        <Link to='/login' style={navStyle}>
+          <li>Login</li>
+        </Link>
         <Link to='/createGroup' style={navStyle}>
           <li>Create group</li>
         </Link>

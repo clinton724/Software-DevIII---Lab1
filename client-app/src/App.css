@@ -46,6 +46,17 @@ nav {
   color: white;
 }
 
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 20hv;
+  background: rgb(73, 79, 82);
+  color: white;
+}
+
+
 .nav-links {
   width: 50%;
   display: flex;
