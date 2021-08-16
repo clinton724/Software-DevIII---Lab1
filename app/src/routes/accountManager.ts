@@ -14,7 +14,7 @@ router.get('/api/signup', async function (req: any, res: any) {
 
 router.post('/api/signup', async function (req: any, res: any) {
   console.log(req.body)
-  console.log(req.body.FirstName)
+  console.log(req.body.firstName)
 })
 
 module.exports = router
