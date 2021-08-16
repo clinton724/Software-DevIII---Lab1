@@ -26,7 +26,7 @@ const useForm = (validate) => {
     const checkErrors = validate(values)
 
     if (checkErrors === false) {
-      fetch('http://localhost:3000/api/signup', {
+      fetch('http://localhost:3000/api/addUser', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
